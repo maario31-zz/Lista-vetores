@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+int a[5], cod, i=0;
+printf("\n Digite 1 para numeros diretos \n Digite 2 para numeros inversos \n \n ");
+scanf("%d", &cod);
+
+if(cod==1){
+    for(i=0;i<5;i++){
+    printf("\n Digite seu valor %d: ",i);
+    scanf("%d", &a[i]);}
+    for(i=0;i<5;i++){
+        printf("\n Os valor %d foi: %d ",i,a[i]);
+    }
+}
+else if(cod==2){
+    for(i=0;i<5;i++){
+printf("\n Digite seu valor %d: ",i);
+scanf("%d", &a[i]);
+    }
+ for(i=4;i>=0;i--){
+   printf("\n Os valor %d foi: %d ",i,a[i]);
+ }
+        }
+    else{
+    printf("\n\n**Digitou um valor nao disponivel, programa fechando**\n\n");
+}
+return 0;
+system("pause>>NULL");
+}
