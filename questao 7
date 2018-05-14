@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int a[5], b[5],i,j;
+
+    for(i=0;i<5;i++){
+    printf("\nDigite o valor de A: \n");
+    scanf("%d", &a[i]);
+    }
+    for(i=0, j=4; i<5; i++, j--){
+// colocar a em b
+        b[j]=a[i];
+}
+    for(j=0;j<5;j++){
+    printf("\n O valor de B eh: %d", b[j]);
+}
+return 0;
+}
